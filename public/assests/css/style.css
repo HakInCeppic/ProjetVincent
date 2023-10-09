@@ -88,4 +88,18 @@ li a:hover{
     top: 62px;
     width: 100%;
     height: auto;
+    margin-bottom: 100px;
+}
+
+.Projects{
+    position: relative;
+    left: 5%;
+    width: 90%;
+    background: red;
+    text-align: center;
+}
+
+.Hak_Image{
+    width: 20%;
+    margin: 5px;
 }
