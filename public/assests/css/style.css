@@ -177,29 +177,39 @@ li a:hover {
     margin-bottom: 100px;
 }
 
-.Projects{
-    position: relative;
-    left: 5%;
-    width: 90%;
-    background: red;
-    text-align: center;
+.fond p{
+    width: 100%; font-size: 3em; font-family: 'Segoe ui'; color: rgb(110, 110, 110); text-align: center;
 }
 
-.Hak_Image{
-    width: 20%;
-    margin: 5px;
+.fond .carré{
+    background-color: rgb(0, 0, 0); width: 100%; padding-left: 15px; padding-right: 15px; padding-top: 8px; padding-bottom: 8px; opacity: 0.75;
 }
 
+.Projects .titre, .About .titre, .Contact .titre{
+    font-size: 2em; width: 10%; position: relative; bottom: 10  px; left: 2%; padding-bottom: 6vh;
+}
 
-.About .titre,
-.Contact .titre {
-    font-size: 2em;
-    width: 10%;
-    position: relative;
-    bottom: 10 px;
-    left: 2%;
-    padding-bottom: 6vh;
+.About .titre, .Contact .titre{
     padding-top: 2%;
+}
+
+.maisons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.5%
+}
+
+.maisons .enfant{
+    padding: 0.5%; width: 23.7%;
+}
+
+.maisons .enfant img{
+    width: 100%;
+}
+
+
+.maisons .enfant p{
+    position: absolute; color: white; background-color: black; width: 10%; padding-top: 0.5%; padding-bottom: 0.5%; font-size: larger; text-align: center;
 }
 
 .About .bigLorem {

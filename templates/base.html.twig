@@ -23,48 +23,56 @@
 			<h1 class="logo">BR Architects</h1>
 			<div class="PrincipaleImg">
 				<img class="ImgHeader" src="{{asset('assests/image/architect.jpg')}}" alt="">
-				<h1>BR Architects</h1>
+				<div class="fond">
+					<div>
+						<p>
+							<span class="carré">BR</span>
+							<span class="discarré">A r c h i t e c t s</span>
+						</p>
+					</div>
+				</div>
 			</div>
 		</header>
 
-  <section>
-    <div class="haut">
-      <div class="Projects">
-          <h2>Projects</h2>
-          <img class="Hak_Image" src="{{asset('assests/image/house5.jpg')}}" alt="">
+		<section>
+			<div class="haut">
+				<div class="Projects">
+					<p class="titre">Projects</p>
+					<div class="maisons">
+						<div class="enfant">
+							<p>Summer House</p><img src="{{asset('assests/image/house5.jpg')}}" alt="cube"></div>
+						<div class="enfant">
+							<p>Brick House</p><img src="{{asset('assests/image/house2.jpg')}}" alt="Brick"></div>
+						<div class="enfant">
+							<p>Renovated</p><img src="{{asset('assests/image/house3.jpg')}}" alt="part"></div>
+						<div class="enfant">
+							<p>Barn House</p><img src="{{asset('assests/image/house4.jpg')}}" alt="toit"></div>
+						<div class="enfant">
+							<p>Summer House</p><img src="{{asset('assests/image/house2.jpg')}}" alt="sumbri"></div>
+						<div class="enfant">
+							<p>Brick House</p><img src="{{asset('assests/image/house5.jpg')}}" alt="cuber"></div>
+						<div class="enfant">
+							<p>Renovated</p><img src="{{asset('assests/image/house4.jpg')}}" alt=""></div>
+						<div class="enfant">
+							<p>Barn House</p><img src="{{asset('assests/image/house3.jpg')}}" alt=""></div>
+					</div>
+				</div>
+			</div>
 
- 
-          <img class="Hak_Image" src="{{asset('assests/image/house2.jpg')}}" alt="">
 
-          <img class="Hak_Image" src="{{asset('assests/image/house5.jpg')}}" alt="">
-
-          <img class="Hak_Image" src="{{asset('assests/image/house4.jpg')}}" alt="">
-
-          <img class="Hak_Image" src="{{asset('assests/image/house2.jpg')}}" alt="">
-
-          <img class="Hak_Image" src="{{asset('assests/image/house5.jpg')}}" alt="">
-
-          <img class="Hak_Image" src="{{asset('assests/image/house4.jpg')}}" alt="">
-
-          <img class="Hak_Image" src="{{asset('assests/image/house3.jpg')}}" alt="">
-
-      </div>
-    </div>
-
-    
-  <div class="bas">
+			<div class="bas">
 				<div class="About">
 
 					<p class="titre">About</p>
 
 					<p class="bigLorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur similique voluptate
-																								                voluptas nobis earum totam, asperiores maxime a nam iusto accusantium dignissimos nulla vitae officiis
-																								                velit doloribus delectus sunt veniam natus esse fuga eius quia! Impedit perspiciatis unde nostrum,
-																								                incidunt eaque quasi? Saepe quidem consequuntur odit vitae cupiditate optio laudantium ipsam, in eveniet
-																								                dolorem at veritatis quod. Aliquam accusantium exercitationem explicabo placeat architecto suscipit fuga
-																								                beatae laborum nobis blanditiis iure dolorem odit cupiditate esse vitae culpa ducimus perspiciatis a,
-																								                aliquid ratione. Quaerat distinctio, ad repudiandae explicabo saepe neque natus cumque ducimus dolorum
-																								                debitis asperiores quas? Nostrum exercitationem quod quae corrupti.</p>
+																														                voluptas nobis earum totam, asperiores maxime a nam iusto accusantium dignissimos nulla vitae officiis
+																														                velit doloribus delectus sunt veniam natus esse fuga eius quia! Impedit perspiciatis unde nostrum,
+																														                incidunt eaque quasi? Saepe quidem consequuntur odit vitae cupiditate optio laudantium ipsam, in eveniet
+																														                dolorem at veritatis quod. Aliquam accusantium exercitationem explicabo placeat architecto suscipit fuga
+																														                beatae laborum nobis blanditiis iure dolorem odit cupiditate esse vitae culpa ducimus perspiciatis a,
+																														                aliquid ratione. Quaerat distinctio, ad repudiandae explicabo saepe neque natus cumque ducimus dolorum
+																														                debitis asperiores quas? Nostrum exercitationem quod quae corrupti.</p>
 				</div>
 
 				<div class="Lesarchitectes">
@@ -138,7 +146,6 @@
 				<p>Powered by Footer</p>
 			</div>
 		</footer>
-    {% block body %}
-    {% endblock %}
-</body>
+		{% block body %}{% endblock %}
+	</body>
 </html>
