@@ -1,66 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('assests/css/style.css')}}">
-    <title>Architecte</title>
-      {% block stylesheets %}
-      {% endblock %}
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{asset('assests/css/style.css')}}">
+		<title>Architecte</title>
+		{% block stylesheets %}{% endblock %}
 
-      {% block javascripts %}
-      {% endblock %}
-</head>
-<body>
+		{% block javascripts %}{% endblock %}
+	</head>
+	<body>
 
-  <header>
-      <nav>
-          <ul>
-              <li><a href="">Projects</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
-          </ul>
-      </nav>
-      <h1 class="logo">BR Architects</h1>
-      <div class="PrincipaleImg">
-          <img class="ImgHeader" src="{{asset('assests/image/architect.jpg')}}" alt="">
-          <h1>BR Architects</h1>
-      </div>
-  </header>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="">Projects</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+			<h1 class="logo">BR Architects</h1>
+			<div class="PrincipaleImg">
+				<img class="ImgHeader" src="{{asset('assests/image/architect.jpg')}}" alt="">
+				<h1>BR Architects</h1>
+			</div>
+		</header>
 
-  <section>
-    <div class="haut">
-      <div class="Projects">
-          <h2>Projects</h2>
-          <div>
-              <img src="" alt="">
-          </div>
-          <div>
-              <img src="img/house2.jpg" alt="">
-          </div>
-          <div>
-              <img src="img/house5.jpg" alt="">
-          </div>
-          <div>
-              <img src="img/house4.jpg" alt="">
-          </div>
-          <div>
-              <img src="img/house2.jpg" alt="">
-          </div>
-          <div>
-              <img src="img/house5.jpg" alt="">
-          </div>
-          <div>
-              <img src="img/house4.jpg" alt="">
-          </div>
-          <div>
-              <img src="img/house3.jpg" alt="">
-          </div>
-      </div>
-    </div>
-  </section>
-    {% block body %}
-    {% endblock %}
-</body>
+		<section>
+			<div class="haut">
+				<div class="Projects">
+					<h2>Projects</h2>
+					<div>
+						<img src="" alt="">
+					</div>
+					<div>
+						<img src="img/house2.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/house5.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/house4.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/house2.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/house5.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/house4.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/house3.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="bas">
+				<div class="About">
+
+					<p class="titre">About</p>
+
+					<p class="bigLorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur similique voluptate
+																								                voluptas nobis earum totam, asperiores maxime a nam iusto accusantium dignissimos nulla vitae officiis
+																								                velit doloribus delectus sunt veniam natus esse fuga eius quia! Impedit perspiciatis unde nostrum,
+																								                incidunt eaque quasi? Saepe quidem consequuntur odit vitae cupiditate optio laudantium ipsam, in eveniet
+																								                dolorem at veritatis quod. Aliquam accusantium exercitationem explicabo placeat architecto suscipit fuga
+																								                beatae laborum nobis blanditiis iure dolorem odit cupiditate esse vitae culpa ducimus perspiciatis a,
+																								                aliquid ratione. Quaerat distinctio, ad repudiandae explicabo saepe neque natus cumque ducimus dolorum
+																								                debitis asperiores quas? Nostrum exercitationem quod quae corrupti.</p>
+				</div>
+
+				<div class="Lesarchitectes">
+					<div class="jon">
+						<img src="{{asset('assests/image/team2.jpg')}}">
+						<p class="Nom">John Doe</p>
+						<p class="Job">CEO & Founder</p>
+						<p class="Lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, illum?</p>
+						<a href="https://fr.wikipedia.org/wiki/John_Doe" target="_blank">
+							<p class="cc">
+								<strong>Contact</strong>
+							</p>
+						</a>
+					</div>
+					<div class="jane">
+						<img src="{{asset('assests/image/team1.jpg')}}">
+						<p class="Nom">Jane Doe</p>
+						<p class="Job">Architect</p>
+						<p class="Lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, minima.</p>
+						<a href="https://fr.wikipedia.org/wiki/Jane_Doe" target="_blank">
+							<p class="cc">
+								<strong>Contact</strong>
+							</p>
+						</a>
+					</div>
+					<div class="mike">
+						<img src="{{asset('assests/image/team3.jpg')}}">
+						<p class="Nom">Mike Ross</p>
+						<p class="Job">Architect</p>
+						<p class="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, laboriosam?</p>
+						<a href="https://fr.wikipedia.org/wiki/Mike_Ross_(homme_politique)" target="_blank">
+							<p class="cc">
+								<strong>Contact</strong>
+							</p>
+						</a>
+					</div>
+					<div class="dan">
+						<img src="{{asset('assests/image/team4.jpg')}}">
+						<p class="Nom">Dan Star</p>
+						<p class="Job">Architect</p>
+						<p class="Lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, accusantium!</p>
+						<a href="https://fr.wikipedia.org/wiki/Star" target="_blank">
+							<p class="cc">
+								<strong>Contact</strong>
+							</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="Contact">
+					<p class="titre">Contact</p>
+					<p class="touch">Let's get in touch and talk about your next project.</p>
+					<div class="case"><input type="text" name="name" class="name" placeholder="Name"><br>
+						<input type="email" name="email" class="email" placeholder="Email"><br>
+						<input type="text" name="subject" class="subject" placeholder="Subject"><br>
+						<input type="text" name="comment" class="comment" placeholder="Comment">
+					</div>
+
+					<div class="button">
+						<a href="https://google.fr" target="_blank">SEND MESSAGE</a>
+					</div>
+				</div>
+				<div class="imagebat">
+					<img src="{{asset('assests/image/map.jpg')}}">
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="power">
+				<p>Powered by Footer</p>
+			</div>
+		</footer>
+		{% block body %}{% endblock %}
+	</body>
 </html>
