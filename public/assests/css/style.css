@@ -1,89 +1,175 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
-.logo{
+.logo {
     position: absolute;
     top: 22px;
     left: 25px;
 }
 
-nav{
-   position: absolute;
-   width: 100%;
-   height: 50px;
-   background: rgb(255, 255, 255);
+nav {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: rgb(255, 255, 255);
 }
 
 /* ul a 20% car le left et de 20% sinon sa agrandi nav*/
 
-ul{
+ul {
     position: relative;
     top: 22px;
     width: 20%;
     left: 80%;
 }
 
-li{
+li {
     display: inline;
     margin-right: 40px;
 }
 
-li a{
+li a {
     text-decoration: none;
     color: black;
     transition: 1s;
 }
 
-li a:hover{
+li a:hover {
     color: rgb(189, 189, 189);
     transition: 1s;
 }
 
-.ImgHeader{
+.ImgHeader {
     position: relative;
     top: 62px;
     width: 100%;
@@ -102,4 +188,140 @@ li a:hover{
 .Hak_Image{
     width: 20%;
     margin: 5px;
+}
+
+
+.About .titre,
+.Contact .titre {
+    font-size: 2em;
+    width: 10%;
+    position: relative;
+    bottom: 10 px;
+    left: 2%;
+    padding-bottom: 6vh;
+    padding-top: 2%;
+}
+
+.About .bigLorem {
+    width: 95%;
+    position: relative;
+    bottom: 10 px;
+    left: 2%;
+    padding-bottom: 8vh;
+}
+
+.jon,
+.jane,
+.mike,
+.dan {
+    display: inline-block;
+    width: 23%;
+    padding: 0.4%;
+}
+
+.jon img,
+.jane img,
+.mike img,
+.dan img {
+    width: 100%;
+    filter: grayscale(75%);
+}
+
+.jon {
+    padding: 1.8%;
+}
+
+.Nom {
+    font-size: xx-large;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.Job {
+    font-size: large;
+    color: grey;
+    padding-bottom: 20px;
+}
+
+.Lorem {
+    font-size: large;
+    padding-bottom: 4%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cc {
+    background-color: lightgray;
+    text-align: center;
+    color: black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.touch {
+    position: relative;
+    left: 30px;
+    font-size: 25px;
+    width: 50%;
+}
+
+.case,
+.case .email,
+.case .subject,
+.case .comment,
+.case .name {
+    width: 98%;
+    font-size: 23px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+.Contact .button {
+    display: inline-block;
+    width: 10%;
+    border: 1px solid;
+    padding: 10px 0 10px 0;
+    margin: 0 0 30px 30px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    text-align: center;
+
+}
+
+.Contact .button a {
+    color: white;
+
+
+}
+
+.imagebat {
+    display: inline-block;
+    width: 100%;
+
+
+}
+
+.imagebat img {
+    display: inline-block;
+    width: 97%;
+    padding-left: 25px;
+}
+
+footer{
+    position: fixed; bottom: 0; width: 100%;
+}
+
+.power{
+    width: 100%; background-color: black; color: white; padding-bottom: 80px; text-align: center; justify-self: center; font-size: xx-large; padding-top: 20px;
 }
