@@ -26,7 +26,7 @@ class HomeController extends AbstractController
 
         }
 
-        return $this->render('/produit/ajout.html.twig',[
+        return $this->render('/produit/index.html.twig',[
             "produit" => $produit,
             'formulaire' =>$form->createView()
         ]);

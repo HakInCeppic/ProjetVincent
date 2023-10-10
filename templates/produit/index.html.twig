@@ -3,10 +3,6 @@
 {% block title %}Mes produit{% endblock %}
 
 {% block body %}
-<h1>Mes produits</h1>
-
-
-{% block body %}
 {{form_start(formulaire)}}
 {{form_widget(formulaire)}}
 
@@ -14,14 +10,4 @@
 {{form_end(formulaire)}}
 {% endblock %}
 
-{% for prod in prods %}
 
-
-    <div class="alert alert-dismissible alert-danger">
-        <button type="button"></button>
-    
-        <p>{{prod.NomProduit}}</p>
-        <p>{{prod.Categorie}}</p>
-    </div>
-{% endfor %}
-{% endblock %}
