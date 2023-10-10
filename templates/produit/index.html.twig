@@ -5,6 +5,15 @@
 {% block body %}
 <h1>Mes produits</h1>
 
+
+{% block body %}
+{{form_start(formulaire)}}
+{{form_widget(formulaire)}}
+
+<button type="submit">envoyer</button>
+{{form_end(formulaire)}}
+{% endblock %}
+
 {% for prod in prods %}
 
 

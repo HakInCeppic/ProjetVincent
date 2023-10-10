@@ -4,13 +4,34 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use App\Entity\Form;
+use App\Form\FormulaireArchiType;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
+use Doctrine\Persistence\ManagerRegistry;
 
 class HomeController extends AbstractController
 {
     #[Route('/', name: 'app_home')]
-    public function index(): Response
+    public function index(Request $request, ManagerRegistry $ManagerRegistry): Response
     {
-        return $this->render('home/index.html.twig');
+        $produit = new Form();
+        $form = $this->createForm(FormulaireArchiType::class,$produit);
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()){
+            $manager = $ManagerRegistry->getManager();
+            $manager->persist($produit);
+            $manager->flush();
+            return $this->redirectToRoute("app_home");
+
+        }
+
+        return $this->render('/produit/ajout.html.twig',[
+            "produit" => $produit,
+            'formulaire' =>$form->createView()
+        ]);
+
     }
 }
+
+

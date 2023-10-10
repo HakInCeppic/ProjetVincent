@@ -25,8 +25,7 @@ class ProduitFixture extends Fixture
             $service->setDateCreation(date($format = 'Y-m-d'));
             $service->setLogo("https://picsum.photos/id/237/200/300");
             $manager->persist($service);
-            
-
+        
         }
         $manager->flush();
 
